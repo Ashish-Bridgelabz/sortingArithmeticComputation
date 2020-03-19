@@ -30,7 +30,7 @@ for((count=1;count<=4;count++))
 do
 	for((count1=$((count+1));count1<=4;count1++))
 	do
-		if(( `echo "${arithmeticArray[$count]}<${arithmeticArray[$count1]}" | bc -q` == 1)) 
+		if(( `echo "${arithmeticArray[$count]}>${arithmeticArray[$count1]}" | bc -q` == 1)) 
 	then
 			temp="${arithmeticArray[$count]}"
 			arithmeticArray[$count]="${arithmeticArray[$count1]}"
