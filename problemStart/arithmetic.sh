@@ -10,5 +10,7 @@ echo "Enter the third input"
 read c
 compute=`echo "scale=2 ; $a+$b*$c" | bc -l`
 echo $compute
+compute1=`echo "scale=2 ; $a*$b+$c" | bc -l`
+echo $compute1
 
 
